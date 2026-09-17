@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sdk_version": "2.2.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "margarete-s-digital-canvas",
+      "version": "0.1.0",
+      "title": "Margarete's Digital Canvas"
+    },
+    "tools": [
+      {
+        "name": "get_profile",
+        "title": "Perfil",
+        "description": "Retorna o perfil público de Margarete Macedo: nome, título, resumo, objetivo, e-mail e redes sociais.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": null,
+        "outputSchema": null
+      },
+      {
+        "name": "get_resume",
+        "title": "Currículo",
+        "description": "Retorna o currículo público: formação acadêmica, experiências profissionais, cursos e certificados.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": null,
+        "outputSchema": null
+      },
+      {
+        "name": "list_skills",
+        "title": "Competências",
+        "description": "Lista as competências públicas agrupadas por área (desenvolvimento, design, ferramentas e idiomas).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": null,
+        "outputSchema": null
+      },
+      {
+        "name": "list_projects",
+        "title": "Projetos",
+        "description": "Lista os projetos públicos do portfólio, com descrição, tecnologias e link.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": null,
+        "outputSchema": null
+      }
+    ]
+  }
+}

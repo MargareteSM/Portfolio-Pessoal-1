@@ -1,33 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Margarete Macedo | Portfólio Pessoal" },
-      {
-        name: "description",
-        content:
-          "Currículo e portfólio de Margarete Macedo, estudante de Tecnologia, Desenvolvimento Web e Design.",
-      },
-      { property: "og:title", content: "Margarete Macedo | Portfólio Pessoal" },
-      {
-        property: "og:description",
-        content:
-          "Conheça a trajetória, os estudos e os projetos de Margarete Macedo.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: Index,
-});
+// O site é 100% estático: o conteúdo vem do arquivo public/index.html,
+// que usa apenas HTML, CSS (style.css) e JavaScript puro (script.js).
+import paginaHtml from "../../public/index.html?raw";
 
-function Index() {
-  return (
-    <iframe
-      title="Portfólio pessoal de Margarete Macedo"
-      src="/portfolio/index.html"
-      className="block h-screen w-full border-0"
-    />
-  );
-}
+export const Route = createFileRoute("/")({
+  server: {
+    handlers: {
+      GET: () =>
+        new Response(paginaHtml, {
+          headers: { "content-type": "text/html; charset=utf-8" },
+        }),
+    },
+  },
+});

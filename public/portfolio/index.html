@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículo e portfólio de Margarete Macedo, estudante de Tecnologia, Desenvolvimento Web e Design."
+    />
+    <title>Margarete Macedo | Portfólio Pessoal</title>
+
+    <!-- O CSS fica em um arquivo separado para facilitar os estudos. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO: altere o nome e os links do menu nesta área. -->
+    <header class="cabecalho">
+      <nav class="navegacao container" aria-label="Navegação principal">
+        <a class="logo" href="#inicio" aria-label="Voltar ao início">MM<span>.</span></a>
+
+        <!-- Botão exibido apenas em telas menores. -->
+        <button
+          class="botao-menu"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="menu" id="menu-principal">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- INÍCIO: troque o texto, os links e o espaço da foto pelos seus dados. -->
+      <section class="inicio" id="inicio">
+        <div class="container grade-inicio">
+          <div class="conteudo-inicio">
+            <p class="etiqueta">Olá, eu sou</p>
+            <h1>Margarete<br />Macedo<span>.</span></h1>
+            <p class="subtitulo">Estudante de Tecnologia, Desenvolvimento Web e Design</p>
+            <p class="resumo">
+              Transformando curiosidade em código e ideias em experiências digitais, um projeto de cada vez.
+            </p>
+
+            <div class="acoes">
+              <!-- Substitua # pelos endereços reais dos seus perfis. -->
+              <a class="botao botao-principal" href="#projetos">Ver projetos</a>
+              <a class="botao botao-secundario" href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="botao botao-secundario" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Para usar sua foto, substitua esta div por: <img src="sua-foto.jpg" alt="Foto de Margarete Macedo"> -->
+          <div class="moldura-foto" aria-label="Espaço reservado para foto de perfil">
+            <div class="foto-placeholder">
+              <span>MM</span>
+              <small>Sua foto aqui</small>
+            </div>
+            <p class="selo-foto">Aprendendo &amp; criando</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE E OBJETIVO: os textos abaixo são provisórios. -->
+      <section class="secao" id="sobre">
+        <div class="container grade-dupla">
+          <div>
+            <p class="etiqueta">01 / Sobre mim</p>
+            <h2>Uma trajetória em construção</h2>
+          </div>
+          <div class="texto-destaque">
+            <p>
+              Sou estudante de tecnologia e Design, interessada em compreender como boas ideias se transformam em soluções digitais úteis, acessíveis e bonitas.
+            </p>
+            <p>
+              Este espaço acompanha minha evolução, reúne aprendizados e registra os projetos que desenvolvo durante essa jornada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faixa-objetivo" id="objetivo">
+        <div class="container grade-dupla">
+          <div>
+            <p class="etiqueta etiqueta-clara">02 / Objetivo</p>
+            <h2>Aprender fazendo.</h2>
+          </div>
+          <p class="texto-claro">
+            Busco desenvolver uma base sólida em HTML, CSS, JavaScript e Design, conquistar minha primeira oportunidade na área de tecnologia e colaborar em projetos que criem experiências digitais claras e humanas.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO: duplique um article para adicionar outro curso. -->
+      <section class="secao" id="formacao">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <div><p class="etiqueta">03 / Formação</p><h2>Formação acadêmica</h2></div>
+            <p>Dados provisórios para você substituir.</p>
+          </div>
+          <div class="grade-cards">
+            <article class="card">
+              <span class="numero-card">01</span>
+              <p class="tipo-card">Graduação</p>
+              <h3>Nome do curso</h3>
+              <p>Nome da instituição de ensino</p>
+              <dl class="detalhes">
+                <div><dt>Período</dt><dd>20XX — 20XX</dd></div>
+                <div><dt>Status</dt><dd><span class="status">Em andamento</span></dd></div>
+              </dl>
+            </article>
+            <article class="card">
+              <span class="numero-card">02</span>
+              <p class="tipo-card">Formação complementar</p>
+              <h3>Nome da formação</h3>
+              <p>Nome da instituição ou plataforma</p>
+              <dl class="detalhes">
+                <div><dt>Período</dt><dd>20XX — 20XX</dd></div>
+                <div><dt>Status</dt><dd><span class="status status-neutro">Planejado</span></dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIÊNCIA: cada item da lista representa uma experiência profissional. -->
+      <section class="secao secao-alternativa" id="experiencia">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <div><p class="etiqueta">04 / Experiência</p><h2>Experiência profissional</h2></div>
+            <p>Inclua trabalhos, estágios e projetos voluntários.</p>
+          </div>
+          <div class="timeline">
+            <article class="item-timeline">
+              <div class="periodo">20XX — atual</div>
+              <div><p class="tipo-card">Nome da empresa</p><h3>Nome do cargo</h3><p>Descreva brevemente suas principais atividades, aprendizados e resultados nesta experiência.</p></div>
+            </article>
+            <article class="item-timeline">
+              <div class="periodo">20XX — 20XX</div>
+              <div><p class="tipo-card">Nome da empresa</p><h3>Nome do cargo</h3><p>Adicione aqui uma segunda experiência profissional ou um projeto relevante.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURSOS: copie um card para cadastrar uma nova plataforma. -->
+      <section class="secao" id="cursos">
+        <div class="container">
+          <div class="cabecalho-secao">
+            <div><p class="etiqueta">05 / Aprendizado</p><h2>Cursos e plataformas</h2></div>
+            <p>Onde estou construindo conhecimento.</p>
+          </div>
+          <div class="grade-tres">
+            <article class="card curso"><span class="icone-texto">A</span><h3>Alura</h3><p>Formações em desenvolvimento web, lógica e Design.</p><span class="tag">Em andamento</span></article>
+            <article class="card curso"><span class="icone-texto">CV</span><h3>Curso em Vídeo</h3><p>Cursos introdutórios de HTML, CSS e JavaScript.</p><span class="tag">Em andamento</span></article>
+            <article class="card curso"><span class="icone-texto">D</span><h3>Duolingo</h3><p>Prática contínua de idiomas para desenvolvimento pessoal.</p><span class="tag">Prática diária</span></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICADOS: altere os href quando tiver os links das credenciais. -->
+      <section class="secao secao-alternativa" id="certificados">
+        <div class="container">
+          <div class="cabecalho-secao"><div><p class="etiqueta">06 / Conquistas</p><h2>Licenças e certificados</h2></div><p>Um registro das etapas concluídas.</p></div>
+          <div class="grade-cards">
+            <article class="card certificado"><div><p class="tipo-card">Nome da instituição</p><h3>Nome do certificado</h3><p>Emitido em: mês de 20XX</p></div><a class="link-seta" href="#">Ver credencial <span>↗</span></a></article>
+            <article class="card certificado"><div><p class="tipo-card">Nome da instituição</p><h3>Nome do certificado</h3><p>Emitido em: mês de 20XX</p></div><a class="link-seta" href="#">Ver credencial <span>↗</span></a></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS: adicione ou remova itens dentro de cada lista. -->
+      <section class="secao" id="skills">
+        <div class="container">
+          <div class="cabecalho-secao"><div><p class="etiqueta">07 / Competências</p><h2>Skills em desenvolvimento</h2></div><p>Conhecimentos que pratico e aperfeiçoo.</p></div>
+          <div class="grade-skills">
+            <article class="grupo-skill"><p class="numero-grupo">01</p><h3>Desenvolvimento</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsividade</li></ul></article>
+            <article class="grupo-skill"><p class="numero-grupo">02</p><h3>Design</h3><ul><li>Design visual</li><li>Hierarquia</li><li>Tipografia</li><li>Prototipação</li></ul></article>
+            <article class="grupo-skill"><p class="numero-grupo">03</p><h3>Ferramentas</h3><ul><li>VS Code</li><li>GitHub</li><li>Figma</li><li>Canva</li></ul></article>
+            <article class="grupo-skill"><p class="numero-grupo">04</p><h3>Idiomas</h3><ul><li>Português — nativo</li><li>Inglês — em estudo</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS: a ilustração é feita com HTML e CSS, sem imagem externa. -->
+      <section class="secao secao-projetos" id="projetos">
+        <div class="container">
+          <div class="cabecalho-secao"><div><p class="etiqueta etiqueta-clara">08 / Portfólio</p><h2>Projetos selecionados</h2></div><p>Prática, processo e evolução.</p></div>
+          <article class="projeto-principal">
+            <div class="preview-projeto" aria-label="Representação visual do portfólio pessoal">
+              <div class="janela"><div class="barra-janela"><span></span><span></span><span></span></div><div class="mini-layout"><div class="mini-texto"><b></b><i></i><i></i><button type="button" tabindex="-1"></button></div><div class="mini-foto">MM</div></div></div>
+            </div>
+            <div class="conteudo-projeto">
+              <p class="tipo-card">Projeto 01 · 2026</p>
+              <h3>Portfólio Pessoal — V0.1</h3>
+              <p>Meu primeiro projeto web: uma landing page criada para apresentar minha trajetória, meus estudos e os próximos passos na tecnologia.</p>
+              <ul class="lista-tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Design responsivo</li></ul>
+              <div class="acoes-projeto"><a class="botao botao-claro" href="#inicio">Ver projeto</a><a class="link-claro" href="#">GitHub ↗</a></div>
+            </div>
+          </article>
+          <div class="proximo-projeto"><span>+</span><p><strong>Próximo projeto</strong><br />Este espaço está pronto para uma nova ideia.</p></div>
+        </div>
+      </section>
+
+      <!-- PROGRESSO: altere a porcentagem no texto e na variável style="--progresso". -->
+      <section class="secao" id="progresso">
+        <div class="container">
+          <div class="cabecalho-secao"><div><p class="etiqueta">09 / Progresso</p><h2>Minha evolução</h2></div><p>Exemplos visuais, sem banco de dados.</p></div>
+          <div class="painel-progresso">
+            <div class="lista-progresso">
+              <div class="progresso-item"><div><strong>Alura</strong><span>Formação Front-end</span></div><b>35%</b><div class="barra"><span style="--progresso: 35%"></span></div></div>
+              <div class="progresso-item"><div><strong>Curso em Vídeo</strong><span>HTML5 e CSS3</span></div><b>60%</b><div class="barra"><span style="--progresso: 60%"></span></div></div>
+              <div class="progresso-item"><div><strong>Duolingo</strong><span>Inglês</span></div><b>45%</b><div class="barra"><span style="--progresso: 45%"></span></div></div>
+              <div class="progresso-item"><div><strong>Próxima plataforma</strong><span>Curso a definir</span></div><b>10%</b><div class="barra"><span style="--progresso: 10%"></span></div></div>
+            </div>
+            <aside class="resumo-estudos"><p class="tipo-card">Resumo de estudos</p><div class="numero-estudos"><strong>04</strong><span>cursos<br />em andamento</span></div><div class="estatisticas"><p><strong>02</strong><span>concluídos</span></p><p><strong>03</strong><span>certificados</span></p></div></aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- REDES: substitua os # pelos seus links. -->
+      <section class="redes" id="redes">
+        <div class="container grade-dupla">
+          <div><p class="etiqueta">10 / Conexões</p><h2>Vamos nos conectar?</h2></div>
+          <div class="lista-redes"><a href="#" target="_blank" rel="noopener"><span>LinkedIn</span><b>↗</b></a><a href="#" target="_blank" rel="noopener"><span>GitHub</span><b>↗</b></a><a href="#"><span>Outra rede</span><b>+</b></a></div>
+        </div>
+      </section>
+
+      <!-- CONTATO: nesta versão o formulário não envia dados. -->
+      <section class="secao contato" id="contato">
+        <div class="container grade-dupla">
+          <div><p class="etiqueta">11 / Contato</p><h2>Tem uma ideia ou oportunidade?</h2><p>Este formulário é apenas visual nesta V0.1. Você também pode substituir o endereço abaixo pelo seu e-mail.</p><a class="email" href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></div>
+          <form class="formulario">
+            <label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="Seu nome" />
+            <label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" />
+            <label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            <button class="botao botao-principal" type="submit">Enviar mensagem</button>
+            <p class="aviso-formulario" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container"><p>Projeto pessoal em constante evolução.</p><p>© <span id="ano-atual"></span> Margarete Macedo</p></div>
+    </footer>
+
+    <!-- O JavaScript fica no final para carregar depois do conteúdo. -->
+    <script src="script.js"></script>
+  </body>
+</html>

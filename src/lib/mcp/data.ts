@@ -11,7 +11,7 @@ export const perfil = {
     "Estudante iniciante em desenvolvimento web e Design, construindo um portfólio pessoal enquanto aprende HTML, CSS e JavaScript.",
   objetivo:
     "Aprender fazendo: evoluir na prática com projetos simples, bem organizados e fáceis de melhorar.",
-  email: "seuemail@exemplo.com",
+  email: "meg@margarete.net.br",
   redes: [
     { nome: "LinkedIn", url: "#" },
     { nome: "GitHub", url: "#" },

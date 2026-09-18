@@ -14,7 +14,7 @@ export const perfil = {
   email: "meg@margarete.net.br",
   redes: [
     { nome: "LinkedIn", url: "https://www.linkedin.com/in/margaretesm" },
-    { nome: "GitHub", url: "#" },
+    { nome: "GitHub", url: "https://github.com/MargareteSM" },
   ],
 };
 

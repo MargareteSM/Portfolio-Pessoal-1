@@ -13,7 +13,7 @@ export const perfil = {
     "Aprender fazendo: evoluir na prática com projetos simples, bem organizados e fáceis de melhorar.",
   email: "meg@margarete.net.br",
   redes: [
-    { nome: "LinkedIn", url: "#" },
+    { nome: "LinkedIn", url: "https://www.linkedin.com/in/margaretesm" },
     { nome: "GitHub", url: "#" },
   ],
 };

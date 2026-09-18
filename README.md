@@ -1,324 +1,180 @@
+<div align="center">
+
 # Margarete's Digital Canvas
 
-Crie a V0.1 de um site pessoal do tipo landing page para servir como meu currículo e portfólio profissional.
+### Portfólio pessoal de Margarete Macedo
 
-Estou começando a estudar desenvolvimento web e Design. Este é meu primeiro projeto, portanto quero uma estrutura simples, organizada, didática e fácil de modificar enquanto aprendo.
+Uma landing page responsiva que reúne trajetória profissional, formação, estudos, competências e projetos em desenvolvimento.
 
-TECNOLOGIAS
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8%2B-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111827)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![TanStack Start](https://img.shields.io/badge/TanStack_Start-1.x-FF4154)](https://tanstack.com/start)
 
-Utilize somente:
+[Ver projeto publicado](https://margarete-macedo-folio.lovable.app) · [GitHub](https://github.com/MargareteSM)
 
-HTML5
+</div>
 
-CSS3
+---
 
-JavaScript puro (Vanilla JavaScript)
+## Sobre o projeto
 
-Crie obrigatoriamente os arquivos separados:
+O **Margarete's Digital Canvas** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e evolução nos estudos de tecnologia e Design.
 
-index.html
+O projeto faz parte do meu processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura pensada para continuar sendo estudada, modificada e aprimorada ao longo do tempo.
 
-style.css
+A página é predominantemente estática e utiliza dados públicos do currículo para exibir:
 
-script.js
+- apresentação pessoal e objetivo profissional;
+- formação acadêmica e experiência profissional;
+- cursos, formação continuada e competências;
+- projeto de portfólio e progresso dos estudos;
+- links para redes profissionais e área de contato.
 
-Não utilize React, Vue, Angular, Bootstrap, Tailwind, frameworks JavaScript, backend, banco de dados ou outras tecnologias nesta V0.1.
+> **Observação:** o formulário de contato é demonstrativo nesta versão. Ele não envia dados para um servidor.
 
-Quero conseguir abrir os arquivos posteriormente, estudar o código e modificá-los manualmente.
+## Preview
 
-OBJETIVO
+A versão publicada está disponível em:
 
-Crie uma landing page pessoal moderna, profissional, responsiva e simples, com foco em:
+**[margarete-macedo-folio.lovable.app](https://margarete-macedo-folio.lovable.app)**
 
-Desenvolvimento Web
+### Captura de tela
 
-HTML
+> Adicione uma captura de tela do projeto em `docs/screenshot.png` e atualize o caminho abaixo quando o arquivo estiver disponível.
 
-CSS
+<!-- Substitua o comentário pela imagem quando adicionar o arquivo:
+![Preview do portfólio](docs/screenshot.png)
+-->
 
-JavaScript
+## Funcionalidades
 
-Design
+- Navegação por âncoras entre as seções da landing page.
+- Menu mobile com abertura, fechamento e atributos de acessibilidade atualizados.
+- Layout responsivo para desktop, tablet e celular.
+- Seções de apresentação, objetivo, formação, experiência, cursos e competências.
+- Listagem de cursos de extensão e informações de formação continuada.
+- Área de projetos com o próprio portfólio como projeto inicial.
+- Representação visual do progresso de estudos, sem banco de dados.
+- Formulário de contato demonstrativo, com mensagem informativa após o envio.
+- Atualização automática do ano exibido no rodapé.
+- Página de erro e rota de não encontrado configuradas no shell da aplicação.
+- Ferramentas MCP públicas para consultar perfil, currículo, competências e projetos.
 
-minha evolução como estudante de tecnologia
+## Tecnologias utilizadas
 
-ESTRUTURA
+### Página e estilos
 
-Crie um menu de navegação que leve às diferentes seções da mesma página.
+- **HTML5** — estrutura semântica da landing page.
+- **CSS3** — layout, identidade visual, responsividade, animações discretas e suporte a preferência por redução de movimento.
+- **JavaScript** — interações simples do menu mobile, formulário demonstrativo e ano automático do rodapé.
 
-Inclua:
+### Aplicação e desenvolvimento
 
-INÍCIO / HERO
+- **TypeScript**
+- **React 19** e **React DOM**
+- **TanStack Start**, **TanStack Router** e **TanStack React Query**
+- **Vite**
+- **Tailwind CSS 4** e **tw-animate-css**
+- **Radix UI** — componentes e primitives utilizados pela interface da aplicação.
+- **Lucide React** — biblioteca de ícones disponível no projeto.
+- **Zod** e **React Hook Form** — dependências utilizadas na base da aplicação.
+- **MCP da Lovable** — rota e ferramentas para disponibilizar dados públicos do portfólio.
+- **ESLint** e **Prettier** — linting e formatação do código.
 
-Nome: Margarete Macedo
+> A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar. A aplicação também possui a estrutura TypeScript, React e TanStack necessária para execução com Vite e TanStack Start.
 
-Uma apresentação curta.
+## Estrutura principal
 
-Exemplo de subtítulo:
+```text
+├── public/
+│   ├── index.html       # Conteúdo da landing page
+│   ├── style.css        # Estilos, layout e responsividade
+│   └── script.js        # Interações simples da página
+├── src/
+│   ├── components/ui/   # Componentes reutilizáveis de interface
+│   ├── hooks/           # Hooks auxiliares, como detecção de mobile
+│   ├── lib/mcp/         # Dados públicos e ferramentas MCP
+│   ├── routes/          # Rotas do TanStack Start
+│   ├── router.tsx       # Configuração do roteador
+│   ├── start.ts         # Middleware e inicialização do servidor
+│   └── styles.css       # Design system da aplicação
+├── package.json         # Scripts e dependências
+├── vite.config.ts       # Configuração do Vite/TanStack Start
+└── tsconfig.json        # Configuração do TypeScript
+```
 
-"Estudante de Tecnologia, Desenvolvimento Web e Design"
+## Como executar localmente
 
-Inclua espaço para uma foto de perfil.
+### Requisitos
 
-Inclua botões para:
+- [Node.js](https://nodejs.org/) — versão compatível com as dependências do projeto.
+- npm, instalado junto com o Node.js.
 
-LinkedIn
+### Instalação
 
-GitHub
+```bash
+git clone https://github.com/MargareteSMM/margaretesm-portfolio-lovable.git
+cd margaretesm-portfolio-lovable
+npm install
+```
 
-Ver projetos
+### Ambiente de desenvolvimento
 
-SOBRE MIM
-
-Crie uma pequena apresentação profissional utilizando texto provisório que eu possa substituir posteriormente.
-
-OBJETIVO
-
-Espaço para descrever meus objetivos profissionais e acadêmicos.
-
-FORMAÇÃO ACADÊMICA
-
-Crie cards simples contendo:
-
-instituição
-
-curso
-
-período
-
-status
-
-Utilize informações provisórias para que eu possa substituí-las.
-
-EXPERIÊNCIA PROFISSIONAL
-
-Crie uma timeline ou cards simples contendo:
-
-empresa
-
-cargo
-
-período
-
-descrição
-
-Utilize placeholders.
-
-CURSOS
-
-Crie cards para cursos e plataformas de aprendizagem.
-
-Inicialmente inclua exemplos como:
-
-Alura
-
-Curso em Vídeo
-
-Duolingo
-
-Deixe a estrutura preparada para acrescentar outras plataformas posteriormente.
-
-LICENÇAS E CERTIFICADOS
-
-Crie cards contendo:
-
-nome do certificado
-
-instituição emissora
-
-data
-
-botão "Ver credencial"
-
-Utilize placeholders onde as informações ainda não estiverem disponíveis.
-
-SKILLS / COMPETÊNCIAS
-
-Crie uma área visual para competências.
-
-Inicialmente:
-
-HTML
-
-CSS
-
-JavaScript
-
-Design
-
-Separe, se possível, em:
-
-Desenvolvimento
-
-Design
-
-Ferramentas
-
-Idiomas
-
-PROJETOS
-
-Crie uma seção de portfólio.
-
-O primeiro projeto será este próprio site:
-
-"Portfólio Pessoal — V0.1"
-
-Inclua espaço para:
-
-imagem
-
-descrição
-
-tecnologias utilizadas
-
-link do projeto
-
-link do GitHub
-
-Prepare a estrutura para adicionar novos projetos futuramente.
-
-PROGRESSO DOS ESTUDOS
-
-Crie uma seção simples para acompanhar visualmente meu progresso em plataformas como:
-
-Alura
-
-Curso em Vídeo
-
-Duolingo
-
-outras plataformas
-
-Para a V0.1, não utilize banco de dados.
-
-Crie somente uma representação visual simples utilizando HTML, CSS e JavaScript.
-
-Pode utilizar:
-
-barras de progresso
-
-cursos em andamento
-
-cursos concluídos
-
-calendário visual simples
-
-Os dados podem ser exemplos provisórios.
-
-REDES SOCIAIS
-
-Crie botões ou ícones para:
-
-LinkedIn
-
-GitHub
-
-outras redes que eu possa adicionar posteriormente
-
-CONTATO
-
-Crie uma área simples de contato.
-
-Nesta V0.1 não é necessário enviar dados para servidor.
-
-RODAPÉ
-
-Inclua:
-
-"Projeto pessoal em constante evolução."
-
-E o ano atual.
-
-DESIGN
-
-Quero um visual:
-
-moderno
-
-profissional
-
-minimalista
-
-organizado
-
-responsivo
-
-relacionado a tecnologia e Design
-
-Utilize boa hierarquia visual, espaçamento, tipografia legível e cards discretos.
-
-Não exagere em animações ou efeitos.
-
-O site deve funcionar bem em desktop e celular.
-
-JAVASCRIPT
-
-Utilize JavaScript somente para funcionalidades simples e educativas, como:
-
-menu mobile
-
-navegação
-
-pequenas interações
-
-atualização automática do ano do rodapé
-
-Mantenha o JavaScript simples e comentado.
-
-APRENDIZADO
-
-Este ponto é muito importante:
-
-Adicione comentários didáticos ao HTML, CSS e JavaScript explicando as principais partes do código.
-
-Organize o código para que uma estudante iniciante consiga identificar facilmente onde alterar:
-
-textos
-
-links
-
-imagens
-
-cores
-
-cursos
-
-certificados
-
-skills
-
-projetos
-
-redes sociais
-
-Não complique a arquitetura.
-
-Antes de começar a implementar, apresente um plano curto da estrutura da página e dos três arquivos.
-
-Depois construa a V0.1.
-
-Ao terminar, explique quais foram as principais partes criadas e indique cinco modificações simples que eu mesma posso tentar fazer no código como exercício de HTML e CSS.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://margarete-macedo-folio.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/04d97a92-4b29-4be2-8ee8-469bf06b31ce).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+Depois, acesse a URL exibida pelo Vite no terminal.
+
+### Outros comandos disponíveis
+
+```bash
+npm run build       # Gera a versão de produção
+npm run build:dev   # Gera o build usando o modo development
+npm run preview     # Pré-visualiza o build de produção
+npm run lint        # Executa o ESLint
+npm run format      # Formata os arquivos com Prettier
+```
+
+## Aprendizados
+
+Este projeto representa uma etapa prática da minha evolução como estudante. Durante sua construção, venho praticando:
+
+- estruturação de páginas com HTML semântico;
+- estilização, hierarquia visual e responsividade com CSS;
+- interações educativas com JavaScript;
+- organização de um projeto com TypeScript, React e TanStack Start;
+- uso de ferramentas de IA para apoiar o desenvolvimento;
+- versionamento e publicação com Git e GitHub;
+- manutenção de dados de currículo e portfólio em uma estrutura organizada.
+
+## Próximas melhorias
+
+Estas são ideias para versões futuras — não representam funcionalidades já implementadas:
+
+- [ ] Substituir o espaço reservado pela foto de perfil.
+- [ ] Conectar o formulário de contato a um serviço de envio ou backend.
+- [ ] Adicionar capturas de tela reais na documentação.
+- [ ] Substituir os textos e dados provisórios por informações revisadas quando necessário.
+- [ ] Adicionar novos projetos à seção de portfólio.
+- [ ] Incluir links de credenciais quando estiverem disponíveis.
+- [ ] Avaliar melhorias adicionais de acessibilidade e SEO.
+
+## Autora
+
+**Margarete Macedo**
+
+- [GitHub](https://github.com/MargareteSM)
+- [LinkedIn](https://www.linkedin.com/in/margaretesm)
+
+---
+
+<div align="center">
+
+Projeto pessoal em constante evolução.
+
+**Learning by building.**
+
+</div>

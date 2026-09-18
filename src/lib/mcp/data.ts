@@ -19,8 +19,9 @@ export const perfil = {
 };
 
 export const formacao = [
-  { curso: "Nome do curso", instituicao: "Nome da instituição", periodo: "20XX — 20XX" },
-  { curso: "Nome da formação", instituicao: "Nome da instituição", periodo: "20XX — 20XX" },
+  { nivel: "Ensino Médio", curso: "Magistério", instituicao: "ENC", periodo: "1989 — 1993", cargaHoraria: "5.088h", status: "Concluído" },
+  { nivel: "Graduação", curso: "Letras — Português e Literaturas", instituicao: "UCB", periodo: "1995 — 1999", cargaHoraria: "2.550h", status: "Concluído" },
+  { nivel: "Pós-graduação", curso: "Língua Portuguesa", instituicao: "UNIVERSO", periodo: "2002 — 2004", cargaHoraria: "740h", status: "Concluído" },
 ];
 
 export const experiencias = [

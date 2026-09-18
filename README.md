@@ -12,7 +12,7 @@ Uma landing page responsiva que reúne trajetória profissional, formação, est
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![TanStack Start](https://img.shields.io/badge/TanStack_Start-1.x-FF4154)](https://tanstack.com/start)
 
-[Ver projeto publicado](https://margarete-macedo-folio.lovable.app) · [GitHub](https://github.com/MargareteSM)
+[Ver projeto publicado](https://margaretesm.lovable.app) · [GitHub](https://github.com/MargareteSM)
 
 </div>
 
@@ -38,7 +38,7 @@ A página é predominantemente estática e utiliza dados públicos do currículo
 
 A versão publicada está disponível em:
 
-**[margarete-macedo-folio.lovable.app](https://margarete-macedo-folio.lovable.app)**
+**[margaretesm.lovable.app](https://margaretesm.lovable.app)**
 
 ### Captura de tela
 

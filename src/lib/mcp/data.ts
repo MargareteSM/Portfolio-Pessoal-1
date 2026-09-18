@@ -63,9 +63,23 @@ export const cursos = [
   { plataforma: "Duolingo", descricao: "Prática contínua de idiomas.", status: "Prática diária" },
 ];
 
-export const certificados = [
-  { nome: "Nome do certificado", instituicao: "Nome da instituição", emitidoEm: "mês de 20XX", credencial: "#" },
-  { nome: "Nome do certificado", instituicao: "Nome da instituição", emitidoEm: "mês de 20XX", credencial: "#" },
+export const cursosExtensao = [
+  { nome: "Comunicação e expressão", instituicao: "FUBRAE/CEN", cargaHoraria: "1.050h" },
+  { nome: "Habilitação para o exercício do Magistério", instituicao: "ENC", cargaHoraria: "5.088h" },
+  { nome: "Português/Redação Oficial", instituicao: "SENAC/DF", cargaHoraria: "180h" },
+  { nome: "Português/Práticas Linguísticas", instituicao: "SENAC/DF", cargaHoraria: "180h" },
+  { nome: "Inglês", instituicao: "CILC/SEEDF", cargaHoraria: "Nível básico" },
+  { nome: "Visão sistêmica", instituicao: "SEEDF/CRET", cargaHoraria: "80h" },
+  { nome: "Psicologia para quem ensina", instituicao: "CETEB", cargaHoraria: "180h" },
+  { nome: "Técnica de trabalho em pequenos grupos", instituicao: "CETEB", cargaHoraria: "125h" },
+  { nome: "Alfabetização e Letramento", instituicao: "EAPE", cargaHoraria: "180h" },
+  { nome: "Proinfo Integrado — Educando com tecnologias", instituicao: "EAPE", cargaHoraria: "180h" },
+  { nome: "Uso de ferramentas digitais", instituicao: "GEAD · EAPE", cargaHoraria: "90h" },
+  { nome: "Ciclos", instituicao: "GEMEB/SUBEB · EAPE", cargaHoraria: "180h" },
+  { nome: "G Suite, material didático & Moodle on-line", instituicao: "EAPE", cargaHoraria: "90h" },
+  { nome: "Projeto de Vida", instituicao: "EAPE", cargaHoraria: "180h" },
+  { nome: "Office, Corel Draw & Photoshop", instituicao: "New Word Informática", cargaHoraria: "140h" },
+  { nome: "Novo Ensino Médio", instituicao: "GETEB · EAPE", cargaHoraria: "90h" },
 ];
 
 export const skills = [

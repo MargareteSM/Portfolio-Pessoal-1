@@ -1,6 +1,6 @@
 <div align="center">
 
-# Margarete's Digital Canvas
+# Margarete's Portfólio
 
 ### Portfólio pessoal de Margarete Macedo
 
@@ -20,7 +20,7 @@ Uma landing page responsiva que reúne trajetória profissional, formação, est
 
 ## Sobre o projeto
 
-O **Margarete's Digital Canvas** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e evolução nos estudos de tecnologia e Design.
+O **Margarete's Portfólio** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e evolução nos estudos de tecnologia e Design.
 
 O projeto faz parte do meu processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura pensada para continuar sendo estudada, modificada e aprimorada ao longo do tempo.
 

@@ -64,6 +64,10 @@ export const cursos = [
 ];
 
 export const cursosExtensao = [
+  { nome: "Git e GitHub: compartilhando e colaborando em projetos", instituicao: "Alura", cargaHoraria: "8h", concluidoEm: "2026-09", credencial: "https://cursos.alura.com.br/certificate/c1dc1ac1-6460-447d-aa99-13fe846bdeef" },
+  { nome: "Começando em Programação: carreira e primeiros passos", instituicao: "Alura", cargaHoraria: "1h", concluidoEm: "2026-08", credencial: "https://cursos.alura.com.br/certificate/d09a89d1-e300-47e6-b07c-2c4c1d2c00ed" },
+  { nome: "Carreira UI Design: Boas-vindas e primeiros passos", instituicao: "Alura", cargaHoraria: "2h", concluidoEm: "2026-08", credencial: "https://cursos.alura.com.br/certificate/8b95ab98-2e41-4e52-829d-ead6e0e5a9fc" },
+  { nome: "Carreira UX Design: Boas-vindas e primeiros passos", instituicao: "Alura", cargaHoraria: "2h", concluidoEm: "2026-08", credencial: "https://cursos.alura.com.br/certificate/40bc06fa-50ed-48e2-b120-63fc711b16dd" },
   { nome: "Comunicação e expressão", instituicao: "FUBRAE/CEN", cargaHoraria: "1.050h" },
   { nome: "Habilitação para o exercício do Magistério", instituicao: "ENC", cargaHoraria: "5.088h" },
   { nome: "Português/Redação Oficial", instituicao: "SENAC/DF", cargaHoraria: "180h" },

@@ -6,9 +6,9 @@
 export const perfil = {
   nome: "Margarete Macedo",
   apelido: "Meg Design",
-  titulo: "Estudante de Tecnologia, Desenvolvimento Web e Design",
+  titulo: "Pesquisadora de Tecnologia, Desenvolvimento Web e Design",
   resumo:
-    "Estudante iniciante em desenvolvimento web e Design, construindo um portfólio pessoal enquanto aprende HTML, CSS e JavaScript.",
+    "Pesquisadora iniciante em desenvolvimento web e Design, construindo um portfólio pessoal enquanto aprende HTML, CSS e JavaScript.",
   objetivo:
     "Aprender fazendo: evoluir na prática com projetos simples, bem organizados e fáceis de melhorar.",
   email: "meg@margarete.net.br",

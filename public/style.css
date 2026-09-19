@@ -40,7 +40,9 @@ h3 { margin-bottom: 12px; font-size: 1.35rem; }
 /* 3. CABEÇALHO E MENU */
 .cabecalho { position: fixed; z-index: 20; top: 0; width: 100%; border-bottom: 1px solid rgba(220, 226, 222, .9); background: rgba(247, 248, 245, .94); backdrop-filter: blur(12px); }
 .navegacao { display: flex; min-height: 72px; align-items: center; justify-content: space-between; }
-.logo { font-size: 1.45rem; font-weight: 900; }
+.logo { display: inline-flex; align-items: center; }
+/* Sua logo: ajuste a altura aqui se quiser maior ou menor. */
+.logo-img { height: 40px; width: auto; border-radius: 6px; display: block; }
 .menu { display: flex; margin: 0; padding: 0; align-items: center; gap: 25px; list-style: none; }
 .menu a { position: relative; font-size: .78rem; font-weight: 700; }
 .menu a::after { position: absolute; right: 0; bottom: -8px; left: 0; height: 2px; background: var(--cor-destaque); content: ""; transform: scaleX(0); transition: transform .2s ease; }

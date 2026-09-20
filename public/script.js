@@ -45,3 +45,28 @@ formulario.addEventListener("submit", function (evento) {
   evento.preventDefault();
   avisoFormulario.textContent = "Formulário demonstrativo — o envio será adicionado em uma versão futura.";
 });
+
+// 4. REVELAÇÃO SUAVE AO ROLAR
+// A animação muda apenas opacidade e posição visual, sem alterar o layout.
+const elementosParaRevelar = document.querySelectorAll(
+  ".secao .container, .faixa-objetivo .container, .redes .container, .projeto-principal, .proximo-projeto"
+);
+
+if ("IntersectionObserver" in window) {
+  elementosParaRevelar.forEach(function (elemento) {
+    elemento.classList.add("revelar");
+  });
+
+  const observador = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (entrada) {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("visivel");
+        observador.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  elementosParaRevelar.forEach(function (elemento) {
+    observador.observe(elemento);
+  });
+}

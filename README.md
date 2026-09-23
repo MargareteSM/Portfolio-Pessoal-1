@@ -32,8 +32,6 @@ A página é predominantemente estática e utiliza dados públicos do currículo
 - projeto de portfólio e progresso dos estudos;
 - links para redes profissionais e área de contato.
 
-> **Observação:** o formulário de contato é demonstrativo nesta versão. Ele não envia dados para um servidor; abre o programa de e-mail do visitante usando `mailto:`.
-
 ## Preview
 
 A versão publicada está disponível em:
@@ -49,10 +47,16 @@ A versão publicada está disponível em:
 - Listagem de cursos de extensão e informações de formação continuada.
 - Área de projetos com o próprio portfólio como projeto inicial.
 - Representação visual do progresso de estudos, sem banco de dados.
-- Formulário de contato demonstrativo, com mensagem informativa após o envio.
+- Formulário de contato com campos de nome, e-mail, assunto e mensagem.
+- Validação nativa dos campos obrigatórios do formulário antes do envio.
+- Montagem automática de uma mensagem com assunto e corpo formatados.
+- Abertura do aplicativo de e-mail padrão por meio de um link `mailto:`.
+- Mensagem de orientação caso nenhum aplicativo de e-mail seja aberto.
 - Atualização automática do ano exibido no rodapé.
 - Página de erro e rota de não encontrado configuradas no shell da aplicação.
 - Ferramentas MCP públicas para consultar perfil, currículo, competências e projetos.
+
+> **Observação sobre o formulário:** o envio não utiliza servidor, banco de dados ou serviço externo. Ao clicar em **Enviar mensagem**, o navegador abre o programa de e-mail padrão com o destinatário `meg@margarete.net.br`, o assunto e o corpo preenchidos. O funcionamento depende de um cliente de e-mail configurado no dispositivo do visitante.
 
 ## Tecnologias utilizadas
 
@@ -65,15 +69,15 @@ A versão publicada está disponível em:
 - **MCP da Lovable** para disponibilizar dados públicos do portfólio
 - **ESLint** e **Prettier**
 
-A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar.
+A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar. A lógica do formulário está em `public/script.js`.
 
 ## Estrutura principal
 
 ```text
 ├── public/
-│   ├── index.html       # Conteúdo da landing page
+│   ├── index.html       # Conteúdo da landing page e campos do formulário
 │   ├── style.css        # Estilos, layout e responsividade
-│   └── script.js        # Interações simples da página
+│   └── script.js        # Menu, formulário mailto, ano e animações
 ├── src/
 │   ├── components/ui/   # Componentes reutilizáveis de interface
 │   ├── hooks/           # Hooks auxiliares, como detecção de mobile
@@ -110,6 +114,14 @@ npm run dev
 
 Depois, acesse a URL exibida pelo Vite no terminal.
 
+### Testando o formulário de e-mail
+
+1. Abra a seção **Contato** no navegador.
+2. Preencha nome, e-mail e mensagem; o assunto é opcional.
+3. Clique em **Enviar mensagem**.
+4. O navegador tentará abrir o cliente de e-mail padrão com a mensagem pronta.
+5. Se nada for aberto, envie a mensagem manualmente para `meg@margarete.net.br`.
+
 ### Outros comandos disponíveis
 
 ```bash
@@ -126,7 +138,8 @@ npm run format      # Formata os arquivos com Prettier
 - [x] Adicionar foto de perfil real.
 - [x] Atualizar os textos de “Sobre mim” e “Objetivo”.
 - [x] Aplicar redesign visual.
-- [ ] Conectar o formulário de contato a um serviço de envio ou backend.
+- [x] Implementar formulário de contato com abertura do cliente de e-mail via `mailto:`.
+- [ ] Conectar o formulário a um serviço de envio ou backend para receber mensagens sem depender de um cliente de e-mail local.
 - [ ] Adicionar capturas de tela reais na documentação.
 - [ ] Adicionar novos projetos à seção de portfólio.
 - [ ] Incluir links de credenciais quando estiverem disponíveis.

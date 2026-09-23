@@ -6,11 +6,11 @@
 export const perfil = {
   nome: "Margarete Macedo",
   apelido: "Meg Design",
-  titulo: "Pesquisadora de Tecnologia, Desenvolvimento Web e Design",
+  titulo: "Educadora e especialista em Língua Portuguesa em transição para a tecnologia",
   resumo:
-    "Pesquisadora iniciante em desenvolvimento web e Design, construindo um portfólio pessoal enquanto aprende HTML, CSS e JavaScript.",
+    "Graduada em Letras pela UCB e em transição para a tecnologia, cursando formação em UX/UI Design e Back-End pela Alura.",
   objetivo:
-    "Aprender fazendo: evoluir na prática com projetos simples, bem organizados e fáceis de melhorar.",
+    "Unir educação, comunicação, criatividade, design e tecnologia, construindo uma nova etapa profissional e explorando as possibilidades que surgem na interseção entre pessoas e tecnologia.",
   email: "meg@margarete.net.br",
   redes: [
     { nome: "LinkedIn", url: "https://www.linkedin.com/in/margaretesm" },

@@ -36,14 +36,44 @@ linksDoMenu.forEach(function (link) {
 const elementoAno = document.querySelector("#ano-atual");
 elementoAno.textContent = new Date().getFullYear();
 
-// 3. FORMULÁRIO DEMONSTRATIVO
-// Nesta V0.1, o formulário não envia dados. Mostramos apenas uma explicação.
+// 3. FORMULÁRIO DE CONTATO (abre o programa de e-mail do visitante)
+// Ao clicar em "Enviar mensagem", montamos um link "mailto:" com os dados
+// digitados e pedimos ao navegador para abri-lo. Assim o Outlook, Mail,
+// Gmail (se estiver como padrão) etc. abre com tudo já preenchido.
 const formulario = document.querySelector(".formulario");
 const avisoFormulario = document.querySelector(".aviso-formulario");
 
+// Troque aqui o endereço que vai receber as mensagens.
+const emailDestino = "meg@margarete.net.br";
+
 formulario.addEventListener("submit", function (evento) {
-  evento.preventDefault();
-  avisoFormulario.textContent = "Formulário demonstrativo — o envio será adicionado em uma versão futura.";
+  evento.preventDefault(); // evita o envio padrão para um servidor
+
+  // Lemos o que a pessoa escreveu em cada campo.
+  const nome = formulario.querySelector("#nome").value.trim();
+  const email = formulario.querySelector("#email").value.trim();
+  const assunto = formulario.querySelector("#assunto").value.trim();
+  const mensagem = formulario.querySelector("#mensagem").value.trim();
+
+  // Assunto do e-mail (usa um texto padrão se a pessoa não escrever nada).
+  const assuntoFinal = assunto || "Contato pelo site de Margarete Macedo";
+
+  // Corpo do e-mail. O "\n" cria uma quebra de linha.
+  const corpo =
+    "Nome: " + nome + "\n" +
+    "E-mail: " + email + "\n\n" +
+    "Mensagem:\n" + mensagem;
+
+  // encodeURIComponent deixa acentos e espaços seguros dentro do link.
+  const link =
+    "mailto:" + emailDestino +
+    "?subject=" + encodeURIComponent(assuntoFinal) +
+    "&body=" + encodeURIComponent(corpo);
+
+  window.location.href = link; // abre o programa de e-mail
+
+  avisoFormulario.textContent =
+    "Abrindo seu programa de e-mail com a mensagem pronta. Se nada abrir, escreva para " + emailDestino + ".";
 });
 
 // 4. REVELAÇÃO SUAVE AO ROLAR

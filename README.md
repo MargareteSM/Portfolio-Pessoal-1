@@ -20,9 +20,9 @@ Uma landing page responsiva que reúne trajetória profissional, formação, est
 
 ## Sobre o projeto
 
-O **Margarete's Portfólio** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e evolução nos estudos de tecnologia e Design.
+O **Margarete's Portfólio** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e projetos em desenvolvimento.
 
-O projeto faz parte do meu processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura pensada para continuar sendo estudada, modificada e aprimorada ao longo do tempo.
+O projeto faz parte do processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura simples, organizada, didática e fácil de modificar.
 
 A página é predominantemente estática e utiliza dados públicos do currículo para exibir:
 
@@ -32,21 +32,13 @@ A página é predominantemente estática e utiliza dados públicos do currículo
 - projeto de portfólio e progresso dos estudos;
 - links para redes profissionais e área de contato.
 
-> **Observação:** o formulário de contato é demonstrativo nesta versão. Ele não envia dados para um servidor.
+> **Observação:** o formulário de contato é demonstrativo nesta versão. Ele não envia dados para um servidor; abre o programa de e-mail do visitante usando `mailto:`.
 
 ## Preview
 
 A versão publicada está disponível em:
 
 **[margaretesm.lovable.app](https://margaretesm.lovable.app)**
-
-### Captura de tela
-
-> Adicione uma captura de tela do projeto em `docs/screenshot.png` e atualize o caminho abaixo quando o arquivo estiver disponível.
-
-<!-- Substitua o comentário pela imagem quando adicionar o arquivo:
-![Preview do portfólio](docs/screenshot.png)
--->
 
 ## Funcionalidades
 
@@ -64,26 +56,16 @@ A versão publicada está disponível em:
 
 ## Tecnologias utilizadas
 
-### Página e estilos
-
-- **HTML5** — estrutura semântica da landing page.
-- **CSS3** — layout, identidade visual, responsividade, animações discretas e suporte a preferência por redução de movimento.
-- **JavaScript** — interações simples do menu mobile, formulário demonstrativo e ano automático do rodapé.
-
-### Aplicação e desenvolvimento
-
-- **TypeScript**
-- **React 19** e **React DOM**
+- **TypeScript**, **React 19** e **React DOM**
 - **TanStack Start**, **TanStack Router** e **TanStack React Query**
-- **Vite**
+- **Vite 8**
 - **Tailwind CSS 4** e **tw-animate-css**
-- **Radix UI** — componentes e primitives utilizados pela interface da aplicação.
-- **Lucide React** — biblioteca de ícones disponível no projeto.
-- **Zod** e **React Hook Form** — dependências utilizadas na base da aplicação.
-- **MCP da Lovable** — rota e ferramentas para disponibilizar dados públicos do portfólio.
-- **ESLint** e **Prettier** — linting e formatação do código.
+- **Radix UI** e **Lucide React**
+- **JavaScript**, HTML5 e CSS3 na landing page didática
+- **MCP da Lovable** para disponibilizar dados públicos do portfólio
+- **ESLint** e **Prettier**
 
-> A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar. A aplicação também possui a estrutura TypeScript, React e TanStack necessária para execução com Vite e TanStack Start.
+A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar.
 
 ## Estrutura principal
 
@@ -115,8 +97,8 @@ A versão publicada está disponível em:
 ### Instalação
 
 ```bash
-git clone https://github.com/MargareteSMM/margaretesm-portfolio-lovable.git
-cd margaretesm-portfolio-lovable
+git clone https://github.com/MargareteSM/Portfolio-Pessoal-Lovable.git
+cd Portfolio-Pessoal-Lovable
 npm install
 ```
 
@@ -138,26 +120,14 @@ npm run lint        # Executa o ESLint
 npm run format      # Formata os arquivos com Prettier
 ```
 
-## Aprendizados
+## Roadmap
 
-Este projeto representa uma etapa prática da minha evolução como estudante. Durante sua construção, venho praticando:
-
-- estruturação de páginas com HTML semântico;
-- estilização, hierarquia visual e responsividade com CSS;
-- interações educativas com JavaScript;
-- organização de um projeto com TypeScript, React e TanStack Start;
-- uso de ferramentas de IA para apoiar o desenvolvimento;
-- versionamento e publicação com Git e GitHub;
-- manutenção de dados de currículo e portfólio em uma estrutura organizada.
-
-## Próximas melhorias
-
-Estas são ideias para versões futuras — não representam funcionalidades já implementadas:
-
-- [ ] Substituir o espaço reservado pela foto de perfil.
+- [x] Substituir dados provisórios por dados reais.
+- [x] Adicionar foto de perfil real.
+- [x] Atualizar os textos de “Sobre mim” e “Objetivo”.
+- [x] Aplicar redesign visual.
 - [ ] Conectar o formulário de contato a um serviço de envio ou backend.
 - [ ] Adicionar capturas de tela reais na documentação.
-- [ ] Substituir os textos e dados provisórios por informações revisadas quando necessário.
 - [ ] Adicionar novos projetos à seção de portfólio.
 - [ ] Incluir links de credenciais quando estiverem disponíveis.
 - [ ] Avaliar melhorias adicionais de acessibilidade e SEO.

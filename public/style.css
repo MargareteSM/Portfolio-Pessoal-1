@@ -258,7 +258,7 @@ body.tema-escuro .painel-progresso { border-color: var(--cor-linha); background:
 body.tema-escuro .barra { background: #2b2629; }
 body.tema-escuro .redes { background: var(--cor-superficie); }
 body.tema-escuro .foto { border-color: rgba(255, 255, 255, .14); }
-body.tema-escuro .menu { background: var(--cor-fundo); }
+/* No modo escuro, o menu (gaveta do celular) usa o fundo escuro. */
 body.tema-escuro .menu.ativo { box-shadow: -20px 20px 60px rgba(0, 0, 0, .5); }
 body.tema-escuro .rodape { background: #0e0b0e; color: #b0a7ad; }
 

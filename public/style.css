@@ -228,6 +228,38 @@ h3 { margin-bottom: 12px; font-size: 1.55rem; }
   .revelar { opacity: 1; transform: none; }
 }
 
+/* ================================================================
+   11. MODO ESCURO: o JavaScript adiciona a classe "tema-escuro" ao
+   <body>. Como as variáveis mudam aqui, todo o site se adapta junto.
+   ================================================================ */
+body.tema-escuro {
+  --cor-fundo: #141114;
+  --cor-superficie: #1d191c;
+  --cor-texto: #f3eff2;
+  --cor-texto-suave: #b0a7ad;
+  --cor-principal: #e0559f;
+  --cor-principal-escura: #c30472;
+  --cor-destaque: #e0559f;
+  --cor-linha: #352e33;
+  --cor-faixa: #0e0b0e;
+  --cor-vidro: rgba(29, 25, 28, .68);
+  --sombra: 0 24px 70px rgba(0, 0, 0, .5);
+}
+body.tema-escuro .cabecalho { border-bottom-color: rgba(216, 211, 215, .12); background: rgba(20, 17, 20, .82); }
+body.tema-escuro .card { border-color: rgba(216, 211, 215, .12); background: rgba(29, 25, 28, .72); box-shadow: 0 8px 28px rgba(0, 0, 0, .25); }
+body.tema-escuro .card:hover { border-color: rgba(224, 85, 159, .4); background: #241f23; box-shadow: 0 18px 48px rgba(0, 0, 0, .4); }
+body.tema-escuro .botao-secundario:hover { background: var(--cor-superficie); }
+body.tema-escuro .status, body.tema-escuro .tag { border-color: rgba(224, 85, 159, .28); background: #3a1a2c; color: #f2a9d2; }
+body.tema-escuro .status-neutro { background: #262226; color: #b0a7ad; }
+body.tema-escuro .icone-texto { border-color: rgba(224, 85, 159, .3); background: #3a1a2c; }
+body.tema-escuro .painel-progresso { border-color: var(--cor-linha); background: rgba(29, 25, 28, .72); box-shadow: 0 14px 42px rgba(0, 0, 0, .3); }
+body.tema-escuro .barra { background: #2b2629; }
+body.tema-escuro .redes { background: var(--cor-superficie); }
+body.tema-escuro .foto { border-color: rgba(255, 255, 255, .14); }
+body.tema-escuro .menu { background: var(--cor-fundo); }
+body.tema-escuro .menu.ativo { box-shadow: -20px 20px 60px rgba(0, 0, 0, .5); }
+body.tema-escuro .rodape { background: #0e0b0e; color: #b0a7ad; }
+
 /* CURSOR PERSONALIZADO: alvo rosa no lugar da seta.
    O SVG entre aspas é a imagem do cursor; "16 16" é o ponto
    exato do clique (o centro do alvo). Troque a cor em %23c30472. */

@@ -6,7 +6,7 @@
 export const perfil = {
   nome: "Margarete Macedo",
   apelido: "Meg Design",
-  titulo: "Educadora e especialista em Língua Portuguesa em transição para a tecnologia",
+  titulo: "Educadora e desenvolvedora web em transição para a tecnologia",
   resumo:
     "Graduada em Letras pela UCB e em transição para a tecnologia, cursando formação em UX/UI Design e Back-End pela Alura.",
   objetivo:

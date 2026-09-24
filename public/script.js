@@ -100,3 +100,28 @@ if ("IntersectionObserver" in window) {
     observador.observe(elemento);
   });
 }
+
+// 5. BOTÃO DE TEMA (claro / escuro)
+// Trocamos a classe "tema-escuro" no <body>; o CSS faz o resto,
+// porque todas as cores vêm de variáveis que mudam nesse modo.
+const botaoTema = document.querySelector(".botao-tema");
+const chaveTema = "tema-do-site"; // nome usado para salvar a escolha no navegador
+
+// Aplica o modo escuro (true) ou claro (false) e salva a escolha.
+function aplicarTema(escuro) {
+  document.body.classList.toggle("tema-escuro", escuro);
+  botaoTema.textContent = escuro ? "☀️" : "🌙";
+  botaoTema.setAttribute("aria-label", escuro ? "Mudar para o modo claro" : "Mudar para o modo escuro");
+  localStorage.setItem(chaveTema, escuro ? "escuro" : "claro");
+}
+
+// Ao abrir o site: usa a escolha salva; se não houver, respeita
+// a preferência que a pessoa já configurou no sistema.
+const temaSalvo = localStorage.getItem(chaveTema);
+const prefereEscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
+aplicarTema(temaSalvo ? temaSalvo === "escuro" : prefereEscuro);
+
+// Cada clique alterna entre os dois modos.
+botaoTema.addEventListener("click", function () {
+  aplicarTema(!document.body.classList.contains("tema-escuro"));
+});

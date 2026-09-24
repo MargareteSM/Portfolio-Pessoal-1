@@ -22,7 +22,7 @@ Uma landing page responsiva que reúne trajetória profissional, formação, est
 
 O **Margarete's Portfólio** é um portfólio pessoal criado para apresentar, em uma única página, a trajetória de Margarete Macedo, sua formação acadêmica, experiência profissional, cursos, competências e projetos em desenvolvimento.
 
-O projeto faz parte do processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura simples, organizada, didática e fácil de modificar.
+O projeto faz parte do processo de aprendizado em desenvolvimento web e construção de portfólio. Ele foi iniciado no [Lovable](https://lovable.dev), com uma estrutura simples, organizada, didática e fácil de modificar enquanto aprendo.
 
 A página é predominantemente estática e utiliza dados públicos do currículo para exibir:
 
@@ -56,7 +56,7 @@ A versão publicada está disponível em:
 - Página de erro e rota de não encontrado configuradas no shell da aplicação.
 - Ferramentas MCP públicas para consultar perfil, currículo, competências e projetos.
 
-> **Observação sobre o formulário:** o envio não utiliza servidor, banco de dados ou serviço externo. Ao clicar em **Enviar mensagem**, o navegador abre o programa de e-mail padrão com o destinatário `meg@margarete.net.br`, o assunto e o corpo preenchidos. O funcionamento depende de um cliente de e-mail configurado no dispositivo do visitante.
+> **Observação sobre o formulário:** o envio não utiliza servidor, banco de dados ou serviço externo. Ao clicar em **Enviar mensagem**, o navegador abre o programa de e-mail padrão com a mensagem pronta. Se não houver cliente de e-mail configurado, o usuário pode copiar ou enviar manualmente a mensagem.
 
 ## Tecnologias utilizadas
 
@@ -69,7 +69,7 @@ A versão publicada está disponível em:
 - **MCP da Lovable** para disponibilizar dados públicos do portfólio
 - **ESLint** e **Prettier**
 
-A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar. A lógica do formulário está em `public/script.js`.
+A landing page exibida em `/` é carregada a partir de `public/index.html`, com `public/style.css` e `public/script.js` separados para manter o código didático e fácil de estudar. A lógica do aplicativo e roteamento ficam em `src/`.
 
 ## Estrutura principal
 
@@ -101,8 +101,8 @@ A landing page exibida em `/` é carregada a partir de `public/index.html`, com 
 ### Instalação
 
 ```bash
-git clone https://github.com/MargareteSM/Portfolio-Pessoal-Lovable.git
-cd Portfolio-Pessoal-Lovable
+git clone https://github.com/MargareteSM/Portfolio-Pessoal-1.git
+cd Portfolio-Pessoal-1
 npm install
 ```
 
